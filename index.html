@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utils/css/estilos.css">
+    <title>Aplicando SASS</title>
+    
+</head>
+<body>
+    <div class="cabecera">
+        <header id="menu">
+            <nav>
+                <a href="index.html"><img src="utils/img/logoAzul.jpg" class="logo" width="250" height="70" alt="logo"></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="presentacion">
+            <div class="flex__item1">
+                <h1>Diseñamos Interfaces Minimalistas!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, dolores iste atque, consectetur consequatur delectus officiis aperiam tempore totam sint sapiente veniam in. Alias, officiis. Aspernatur accusamus officiis vitae excepturi?</p>       
+                <button class="btn-principal" type="submit"> Contacto</button>
+                <button class="btn-secundario" type="submit"> Ver Portafolio</button>
+            </div>            
+            <div class="flex-item2"><img src="utils/img/inicio.png"  alt="portada">
+            </div>
+        </section>
+    </div>
+
+
+    <div class="wrapper">
+        <section class="servicios">
+            <div class="titulo__servicios">
+                <h2>Creamos experiencias maravillosas para los Usuarios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam porro, pariatur voluptatum culpa exercitationem ipsam doloremque ullam omnis a aspernatur hic eum! Fuga eveniet sint, aspernatur alias dignissimos officiis?</p>
+
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <img src="./utils/img/iconos/01.png" alt="">
+                    <h3>Diseño UX/UI</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cum modi saepe veniam quos odit, dicta eligendi aspernatur maiores distinctio itaque. </p>
+                </div>
+                <div>
+                    <img src="./utils/img/iconos/02.png" alt="">
+                    <h3>Desarrollo Web</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cum modi saepe veniam quos odit, dicta eligendi aspernatur maiores distinctio itaque. </p>
+                </div>
+                <div>
+                    <img src="./utils/img/iconos/03.png" alt="">
+                    <h3>Comercio Digital</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cum modi saepe veniam quos odit, dicta eligendi aspernatur maiores distinctio itaque. </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="footer-content">&copy; Todos los derechos reservados 2021</p>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        window.onscroll = function(){
+            if(window.pageYOffset>10){
+                menu.style.backgroundColor='#fff';
+            }
+            else{
+                menu.style.backgroundColor='initial';
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import 'global'; 
+
+.logo{
+    width: 280px;
+    height: 80px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    // border-top: 10px solid rgb(52, 53, 51);
+    width: 100%;
+    // background-color: rgba(247, 247, 247, 0.693);
+       
+       
+}
+.cabecera{
+    width: 100%;
+    height: auto;
+    
+    background-image:url(../img/uno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.wrapper{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h2{
+        font-size: 40px;
+    }
+
+}
+
+
+
+// Ejemplo de nesting 
+
+nav{
+    @include caja-flex(space-beetween, center, nowrap);
+
+    ul{
+        display: flex;
+        padding: 0;
+        margin-left: auto;
+
+        a{
+            padding:10px;
+            font-weight: bold;
+            font-size: 2rem;
+            color:rgb(51, 51, 51);
+            
+        }
+        
+        a:hover{
+            color:#6495ED;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.presentacion{ 
+    padding-top: 200px;
+    padding-bottom: 50px;
+    @include caja-flex
+    (space-beetween, center, nowrap);
+    background-color: rgba(221, 218, 218, 0.542);
+
+    .flex-item2{
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 0;
+        padding-right: 20px;
+        font-size: $font-h1;
+    }
+    p{
+        padding-right: 20px;
+        padding-bottom: 10px;
+        color:rgb(51, 51, 51);
+    }
+    
+}
+
+.servicios{
+    div{
+        text-align: center;
+    }
+
+    .tipo-servicios{
+        @include caja-flex(center, center, nowrap);
+        img{
+            font-size: 30px;
+            width: 120px;
+            height: 120px;
+            
+            margin:10px;
+            padding: 10px;
+            border-radius: 100%;
+            background: #6495ED;
+        }
+    }
+}
+
+
+footer{
+    min-height: 80px;
+    background-color:rgb(52, 53, 51);
+    margin-top: 0;
+
+    .footer-content{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+
+@import 'medios';
